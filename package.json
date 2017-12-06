@@ -1,0 +1,24 @@
+{
+  "name": "Landoretti",
+  "version": "1.0.0",
+  "description": "dit is een schoolproject en dus geen professionele opdracht",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TVke/landoretti.git"
+  },
+  "author": "Thomas",
+  "license": "ISC",
+  "homepage": "http://landoretti.local",
+  "devDependencies": {
+    "autoprefixer": "^7.2.1",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-purgecss": "^0.13.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "pump": "^1.0.2",
+    "tailwindcss": "^0.3.0"
+  }
+}
