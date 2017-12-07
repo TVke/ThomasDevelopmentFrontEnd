@@ -46,14 +46,14 @@ View the full documentation at https://tailwindcss.com.
 var colors = {
   'transparent': 'transparent',
 
-  'black': '#222b2f',
-  'grey-darkest': '#364349',
-  'grey-darker': '#596a73',
-  'grey-dark': '#70818a',
-  'grey': '#9babb4',
-  'grey-light': '#dae4e9',
-  'grey-lighter': '#f3f7f9',
-  'grey-lightest': '#fafcfc',
+  'black': '#000',
+  'grey-darkest': '#1d1d1b',
+  'grey-darker': '#4e4e4e',
+  'grey-dark': '#777777',
+  'grey': '#bebebd',
+  'grey-light': '#eaeaea',
+  'grey-lighter': '#ededed',
+  'grey-lightest': '#f3f3f3',
   'white': '#ffffff',
 
   'red-darkest': '#420806',
@@ -91,15 +91,15 @@ var colors = {
   'teal-darkest': '#0d3331',
   'teal-darker': '#174e4b',
   'teal-dark': '#38a89d',
-  'teal': '#4dc0b5',
+  'teal': '#01a6a0',
   'teal-light': '#64d5ca',
   'teal-lighter': '#a0f0ed',
   'teal-lightest': '#e8fffe',
 
-  'blue-darkest': '#05233b',
-  'blue-darker': '#103d60',
-  'blue-dark': '#2779bd',
-  'blue': '#3490dc',
+  'blue-darkest': '#0a1e75',
+  'blue-darker': '#0120a6',
+  'blue-dark': 'rgba(1,32,166,0.65)',
+  'blue': '#21398b',
   'blue-light': '#6cb2eb',
   'blue-lighter': '#bcdefa',
   'blue-lightest': '#eff8ff',
@@ -128,10 +128,10 @@ var colors = {
   'pink-lighter': '#ffbbca',
   'pink-lightest': '#ffebef',
 
-  get ['brand-darkest']() { return this['orange-darkest']; },
-  get ['brand-darker']() { return this['orange-darker']; },
-  get ['brand-dark']() { return this['orange-dark']; },
-  get ['brand']() { return this['orange']; },
+  get ['brand-darkest']() { return this['blue-darkest']; },
+  get ['brand-darker']() { return this['blue-darker']; },
+  get ['brand-dark']() { return this['blue-dark']; },
+  get ['brand']() { return this['tail']; },
   get ['brand-light']() { return this['orange-light']; },
   get ['brand-lighter']() { return this['orange-lighter']; },
   get ['brand-lightest']() { return this['orange-lightest']; },
@@ -177,8 +177,8 @@ module.exports = {
   screens: {
     'sm': '576px',
     'md': '768px',
-    'lg': '992px',
-    'xl': '1200px',
+    'lg': '1024px',
+    'xl': '1500px',
   },
 
 
@@ -201,6 +201,16 @@ module.exports = {
   */
 
   fonts: {
+	'Arial': [
+	  'Arial',
+	  'Helvetica',
+	  'sans-serif',
+	],
+	'Helvetica': [
+	  'Helvetica',
+	  'Arial',
+	  'sans-serif',
+	],
     'sans': [
       '-apple-system',
       'BlinkMacSystemFont',
@@ -385,6 +395,7 @@ module.exports = {
     '0': '0',
     '2': '2px',
     '4': '4px',
+	'7': '7px',
     '8': '8px',
   },
 
@@ -715,6 +726,7 @@ module.exports = {
     'md': '0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)',
     'lg': '0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08)',
     'inner': 'inset 0 2px 4px 0 rgba(0,0,0,0.06)',
+	'logo': '0 0 24px rgba(1,1,1,0.19)',
     'none': 'none',
   },
 
@@ -758,9 +770,14 @@ module.exports = {
 
   opacity: {
     '0': '0',
+	'20': '.2',
     '25': '.25',
+	'30': '.3',
+	'32': '.32',
     '50': '.5',
-    '75': '.75',
+    '65': '.65',
+	'70': '.7',
+	'75': '.75',
     '100': '1',
   },
 
