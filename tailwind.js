@@ -131,7 +131,7 @@ var colors = {
   get ['brand-darkest']() { return this['blue-darkest']; },
   get ['brand-darker']() { return this['blue-darker']; },
   get ['brand-dark']() { return this['blue-dark']; },
-  get ['brand']() { return this['tail']; },
+  get ['brand']() { return this['teal']; },
   get ['brand-light']() { return this['orange-light']; },
   get ['brand-lighter']() { return this['orange-lighter']; },
   get ['brand-lightest']() { return this['orange-lightest']; },
