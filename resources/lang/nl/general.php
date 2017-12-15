@@ -19,11 +19,13 @@ return [
     'ART' => 'ART',
     'ISEARCH' => 'ISEARCH',
     'MYAUCTIONS' => 'MYAUCTIONS',
-    'MYBBIDS' => 'MYBBIDS',
+    'MYBIDS' => 'MYBIDS',
     'CONTACT' => 'CONTACT',
     /* login */
     'Register' => 'Register',
     'Login' => 'Login',
+    'User'=>'User',
+    'Password'=>'Password',
     /* logged in */
     'WATCHLIST' => 'WATCHLIST',
     'PROFILE' => 'PROFILE',

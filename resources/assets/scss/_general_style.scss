@@ -1,0 +1,143 @@
+*, html {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: $Arial;
+}
+
+ul{
+    list-style: none;
+}
+
+// logo
+.logo{
+    position: relative;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+
+    h1 {
+        text-indent: -9999rem;
+        position: absolute;
+        pointer-events: none;
+    }
+    img {
+        display: block;
+        position: absolute;
+        width: 75px;
+        padding: 0 14px 10px;
+        box-shadow: $logo-shadow;
+        background: white;
+    }
+}
+header{
+    .logo{
+        top: 0;
+    }
+}
+footer{
+    .logo{
+        img{
+            padding-top: 10px;
+            padding-bottom: 0;
+            bottom: 0;
+        }
+    }
+}
+
+//top bar
+.top-bar{
+    border-top: $body-border;
+
+    .center-wrap {
+        display: flex;
+        justify-content: space-between;
+        max-width: 859px;
+        margin: 0 auto;
+        padding-left: 165px;
+
+        .user-bar {
+            display: flex;
+            padding: 17px 0;
+            font-size: 13px;
+
+            span{
+                padding: 0 20px;
+            }
+            a{
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $brand-blue-darker;
+            }
+            .user-login{
+                display: none;
+            }
+        }
+        .search-field {
+            display: flex;
+            padding: 10px 0;
+
+            .search-bar {
+                font-size: 100%;
+                border: 1px solid $grey;
+                border-radius: 5.5px / 3.5px;
+                padding: 5px 23px;
+                color: $grey-darkest;
+                font-style: italic;
+                width: 161px;
+            }
+            input[type=image]{
+                display: block;
+                border: none;
+                width: 18px;
+                margin-left: 8px;
+            }
+        }
+    }
+}
+
+// nav-bar
+.nav-bar {
+    background: $grey-light;
+
+    .center-wrap {
+        display: flex;
+        justify-content: space-between;
+        max-width: 859px;
+        margin: 0 auto;
+        padding-left: 165px;
+
+        .navigation{
+            a{
+                color: $grey-darker;
+                padding: 16px 30px 17px 0;
+                font-size: 15px;
+                font-weight: bold;
+            }
+        }
+
+        ul{
+            display: flex;
+            justify-content: space-between;
+
+            a{
+                color: $brand-blue-darker;
+                text-decoration: none;
+                padding: 17px 0 18px 20px;
+                font-size: 13px;
+                display: block;
+
+                &.active{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.bottom-bar{
+    border-bottom: $body-border;
+    position: relative;
+}
