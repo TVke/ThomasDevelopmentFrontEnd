@@ -4,10 +4,11 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | App Language Lines
+    | general Language Lines
     |--------------------------------------------------------------------------
     |
-    | The following language lines are used by the construction of the app.
+    | The following language lines are used by the construction of the general
+    | header and footer of the site.
     |
     */
 
@@ -56,7 +57,7 @@ return [
     's1_Asian' => 'Asian Contemporary',
     's1_Conceptual' => 'Conceptual',
     's1_Contemporary' => 'Contemporary',
-    's1_Emerging' => 'Emerging Artist',
+    's1_Emerging' => 'Emerging Artists',
     's1_Figurative' => 'Figurative',
     's1_Middle' => 'Middle Eastern Contemporary',
     's1_Minimalism' => 'Minimalism',
@@ -80,7 +81,7 @@ return [
     'en_Ending' => 'Ending this Week',
     'en_Newly' => 'Newly Listed',
     'en_Purchase' => 'Purchase Now',
-    'en_1990s' => '1990s-Present',
+    'en_1990s' => '1990s–Present',
     /* search */
     'SEARCH_TITLE' => 'FIND WHAT YOU NEED.',
     /* contact */

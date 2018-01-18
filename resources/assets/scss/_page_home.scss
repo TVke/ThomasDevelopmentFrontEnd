@@ -1,0 +1,201 @@
+
+.carousel{
+    background: $carousel-grey;
+    position: relative;
+    height: 57.13333333vw;
+    overflow: hidden;
+    width: 100vw;
+
+    &>*{
+        position: absolute;
+    }
+    nav{
+        display: block;
+        z-index: 10;
+        height: inherit;
+        width: 100%;
+
+        .prev,.next{
+            opacity: $opacity-8;
+            background: $arrow-grey;
+            position: absolute;
+            bottom: 390px;
+
+            img{
+                display: block;
+                height: 42px;
+            }
+        }
+        .prev img{
+            margin: 14px 11px 14px 8px;
+        }
+        .next{
+            right: 0;
+            img{
+                margin: 14px 8px 14px 11px;
+            }
+        }
+        ul{
+            position: absolute;
+            bottom: 26px;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            width: 115px;
+            display: flex;
+            justify-content: space-between;
+
+            li{
+
+                &.active a{
+                    background: $carousel-active-bg;
+                }
+                a{
+                    display: block;
+                    background: $carousel-nav-bg;
+                    border-radius: 50%;
+                    border: 1px solid $carousel-nav-border;
+                    width: 13px;
+                    height: 13px;
+
+                    &:hover{
+                        background: $carousel-hover-bg;
+                    }
+                }
+            }
+
+        }
+    }
+    p{
+        max-width: 924px;
+        color: $white;
+        padding: 37px 50px;
+        z-index: 10;
+        bottom: 100px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background: $blue-trans;
+    }
+    img{
+        height: 857px;
+        z-index: 0;
+        margin: 0 auto;
+
+        &.shown{
+            z-index: 1;
+        }
+    }
+    noscript{
+        z-index: 10;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: $white;
+        padding: 4px 7px;
+        background: $arrow-grey;
+    }
+}
+
+section{
+    h2{
+        font-family: $Helvetica;
+        font-size: 40px;
+        font-weight: lighter;
+        color: $brand-blue-darker;
+        padding: 50px 25px;
+        text-align: center;
+    }
+
+    .icons{
+        max-width: 1024px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+
+        img{
+            height: 117px;
+            margin: 0 auto 30px;
+            display: block;
+        }
+        h3{
+            font-size: 25px;
+            color: $grey-darker;
+            font-weight: normal;
+            line-height: 21px;
+        }
+        p{
+            font-size: 15px;
+            color: $grey-darker;
+            line-height: 20px;
+            padding: 7px 60px 50px;
+        }
+    }
+}
+.switch{
+    background: $grey;
+
+    h2{
+        display: flex;
+        justify-content: center;
+        a{
+            display: block;
+            padding: 10px 15px;
+
+            img{
+                display: block;
+                height: 28px;
+                width: 28px;
+            }
+            &.open{
+                transform: rotate(90deg);
+            }
+        }
+    }
+    &>div{
+        max-width: 1024px;
+        margin: 0 auto;
+        display: none;
+
+        &.open{
+            display: block;
+        }
+        &.first{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 100px;
+
+            a{
+                display: block;
+                position: relative;
+
+                &:hover::after{
+                    content: "";
+                    position: absolute;
+                    top:0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background: $overlay-grey url("/img/icons/witte search.svg") no-repeat center;
+                }
+            }
+            div{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: space-between;
+
+                a img{
+                    display: block;
+                    width: 314px;
+                }
+            }
+            &>a img{
+                display: block;
+                width: 703px;
+            }
+        }
+    }
+}
