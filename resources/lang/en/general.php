@@ -90,4 +90,13 @@ return [
     'phone' => '+xx (0)x xxx xx xx',
     /* certificate */
     'ssl' => 'secured by RapidSSL $10000 Warranty',
+
+    /* spotlight */
+    'item' => 'Lorem Ipsum',
+    'image-alt' => 'Lorem Ipsum',
+    'details' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. magnis dis parturient montes, nascetur ridiculus mus...',
+    'price' => 'Price: € :price',
+    'call-to-auction' => 'VISIT AUCTION',
+    'arrow-alt' => 'arrow',
+
 ];

@@ -1,0 +1,75 @@
+
+.spotlight{
+    position: relative;
+
+    img{
+        display: block;
+        width: 100%;
+    }
+
+    figcaption{
+        position: absolute;
+        max-width: 1024px;
+        margin: 0 auto;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: flex-end;
+
+        .content {
+            position: relative;
+            color: $white;
+            z-index: 10;
+            background: $blue-trans;
+            font-size: 15px;
+            line-height: 21px;
+            width: 315px;
+            margin: 50px;
+            box-sizing: border-box;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: -14px;
+                top: -12px;
+                background: $brand;
+                border: 7px solid $white;
+                border-radius: 50%;
+                height: 18px;
+                width: 17px;
+            }
+        }
+        button{
+            font-family: $Helvetica;
+            font-weight: normal;
+            border: none;
+            border-radius: 0;
+            background: $white;
+            width: 100%;
+            color: $brand;
+            font-size: 20px;
+            padding: 29px;
+            display: flex;
+            justify-content: center;
+
+            img{
+                display: block;
+                height: 17px;
+                width: 11px;
+                margin: 3px 10px;
+            }
+        }
+        h4{
+            font-family: $Helvetica;
+            font-size: 30px;
+            font-weight: lighter;
+            border-bottom: 1px solid $spotlight-separator;
+        }
+        p{
+            font-size: 15px;
+            line-height: 21px;
+        }
+    }
+}

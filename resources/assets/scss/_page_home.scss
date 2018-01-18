@@ -66,16 +66,30 @@
 
         }
     }
-    p{
+    p.content{
         max-width: 924px;
         color: $white;
-        padding: 37px 50px;
+        padding: 32px 50px;
         z-index: 10;
         bottom: 100px;
         left: 0;
         right: 0;
         margin: 0 auto;
         background: $blue-trans;
+        font-size: 15px;
+        line-height: 21px;
+
+        &::before{
+            content: "";
+            position: absolute;
+            left: -14px;
+            top: -12px;
+            background: $brand;
+            border: 7px solid $white;
+            border-radius: 50%;
+            height: 18px;
+            width: 17px;
+        }
     }
     img{
         height: 857px;
@@ -104,7 +118,7 @@ section{
         font-size: 40px;
         font-weight: lighter;
         color: $brand-blue-darker;
-        padding: 50px 25px;
+        padding: 42px 25px 51px;
         text-align: center;
     }
 

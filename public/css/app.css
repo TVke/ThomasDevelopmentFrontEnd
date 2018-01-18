@@ -282,16 +282,28 @@ footer {
         height: 13px; }
         .carousel nav ul li a:hover {
           background: #bebebe; }
-  .carousel p {
+  .carousel p.content {
     max-width: 924px;
     color: #ffffff;
-    padding: 37px 50px;
+    padding: 32px 50px;
     z-index: 10;
     bottom: 100px;
     left: 0;
     right: 0;
     margin: 0 auto;
-    background: rgba(1, 32, 166, 0.65); }
+    background: rgba(1, 32, 166, 0.65);
+    font-size: 15px;
+    line-height: 21px; }
+    .carousel p.content::before {
+      content: "";
+      position: absolute;
+      left: -14px;
+      top: -12px;
+      background: #01a6a0;
+      border: 7px solid #ffffff;
+      border-radius: 50%;
+      height: 18px;
+      width: 17px; }
   .carousel img {
     height: 857px;
     z-index: 0;
@@ -313,7 +325,7 @@ section h2 {
   font-size: 40px;
   font-weight: lighter;
   color: #0a1e75;
-  padding: 50px 25px;
+  padding: 42px 25px 51px;
   text-align: center; }
 
 section .icons {
@@ -403,3 +415,73 @@ section .icons {
       .switch > div.first > a img {
         display: block;
         width: 703px; }
+
+.spotlight {
+  position: relative; }
+  .spotlight img {
+    display: block;
+    width: 100%; }
+  .spotlight figcaption {
+    position: absolute;
+    max-width: 1024px;
+    margin: 0 auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    .spotlight figcaption .content {
+      position: relative;
+      color: #ffffff;
+      z-index: 10;
+      background: rgba(1, 32, 166, 0.65);
+      font-size: 15px;
+      line-height: 21px;
+      width: 315px;
+      margin: 50px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
+      .spotlight figcaption .content::before {
+        content: "";
+        position: absolute;
+        left: -14px;
+        top: -12px;
+        background: #01a6a0;
+        border: 7px solid #ffffff;
+        border-radius: 50%;
+        height: 18px;
+        width: 17px; }
+    .spotlight figcaption button {
+      font-family: "Helvetica", "Arial", sans-serif;
+      font-weight: normal;
+      border: none;
+      border-radius: 0;
+      background: #ffffff;
+      width: 100%;
+      color: #01a6a0;
+      font-size: 20px;
+      padding: 29px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .spotlight figcaption button img {
+        display: block;
+        height: 17px;
+        width: 11px;
+        margin: 3px 10px; }
+    .spotlight figcaption h4 {
+      font-family: "Helvetica", "Arial", sans-serif;
+      font-size: 30px;
+      font-weight: lighter;
+      border-bottom: 1px solid #2b45b5; }
+    .spotlight figcaption p {
+      font-size: 15px;
+      line-height: 21px; }
