@@ -12,6 +12,15 @@ return [
     |
     */
 
+    /* site descriptions */
+    'description-home' => 'Landoretti ART gives you the change to bid on your favorite auctions or to sell some of your stuff.',
+    'description-art' => 'In this part of the site you find all the masterpieces of well known and unknown artists.',
+    'description-search' => 'You can search throughout the site to find article you find interesting to place a bid on.',
+    'description-auctions' => 'The auction page is where you can place bids on some of your favorite pieces.',
+    'description-bids' => 'The bid page is where you get an overview of all your placed bids.',
+    'description-contact' => 'any question about Landoretti ART, an auction or any of your bids you can ask us here',
+    'description-general' => 'Landoretti ART makes bidding and opening an auction easy and quick. Making money was never this easy.',
+
     /* general */
     'brand-name' => 'Landoretti ART',
     'Search' => 'Search',
@@ -95,7 +104,7 @@ return [
     'item' => 'Lorem Ipsum',
     'image-alt' => 'Lorem Ipsum',
     'details' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. magnis dis parturient montes, nascetur ridiculus mus...',
-    'price' => 'Price: € :price',
+    'price' => 'Price',
     'call-to-auction' => 'VISIT AUCTION',
     'arrow-alt' => 'arrow',
 

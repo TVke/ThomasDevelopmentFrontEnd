@@ -2,8 +2,7 @@
 <html lang="{{ app()->getLocale() }}">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width">
+    <meta name="viewport" content="width=device-width">
     <title>@yield('title'){{ config('app.name', 'Landoretti ART') }}</title>
     <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -12,6 +11,21 @@
     <link rel="manifest" href="/manifest.json">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#01a6a0">
     <meta name="theme-color" content="#fff">
+    @if(Route::currentRouteName() === "home")
+        <meta name="description" content="{{ __('general.description-home') }}">
+    @elseif(Route::currentRouteName() === "art")
+        <meta name="description" content="{{ __('general.description-art') }}">
+    @elseif(Route::currentRouteName() === "search")
+        <meta name="description" content="{{ __('general.description-search') }}">
+    @elseif(Route::currentRouteName() === "auctions")
+        <meta name="description" content="{{ __('general.description-auctions') }}">
+    @elseif(Route::currentRouteName() === "bids")
+        <meta name="description" content="{{ __('general.description-bids') }}">
+    @elseif(Route::currentRouteName() === "contact")
+        <meta name="description" content="{{ __('general.description-contact') }}">
+    @else
+        <meta name="description" content="{{ __('general.description-general') }}">
+    @endif
 </head>
 <body>
 <header>

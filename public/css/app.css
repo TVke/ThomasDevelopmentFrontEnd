@@ -486,3 +486,6 @@ section .icons {
     .spotlight figcaption p {
       font-size: 15px;
       line-height: 21px; }
+
+.error p {
+  text-align: center; }
