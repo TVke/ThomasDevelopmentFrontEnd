@@ -27,9 +27,9 @@ return [
     'label-description' => 'Beschrijving',
     'label-condition' => 'Condition',
     'label-origin' => 'Oorsprong',
-    'label-description-placeholder' => 'Beschrijving',
-    'label-condition-placeholder' => 'Staat',
-    'label-origin-placeholder' => 'Oorsprong',
+    'label-description-placeholder' => 'Beschrijf je veiling zo grondig mogelijk.',
+    'label-condition-placeholder' => 'Wat is de staat van uw kunstwerk',
+    'label-origin-placeholder' => 'Wat is de oorsprong van uw kunstwerk',
     'label-photos' => "Foto's",
     'label-photos-content' => "Gelieve één afbeelding met de handtekening van het kunstwerk te uploaden en één foto van het kunstwerk zelf.
     U kunt maximaal 3 foto's uploaden met een maximum grote van 10MB per foto.",

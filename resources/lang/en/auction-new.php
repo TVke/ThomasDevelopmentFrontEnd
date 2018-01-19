@@ -27,9 +27,9 @@ return [
     'label-description' => 'Description',
     'label-condition' => 'Condition',
     'label-origin' => 'Origin',
-    'label-description-placeholder' => 'Description',
-    'label-condition-placeholder' => 'Condition',
-    'label-origin-placeholder' => 'Origin',
+    'label-description-placeholder' => 'Describe your auction as thorough as possible.',
+    'label-condition-placeholder' => "What's the condition of the artwork",
+    'label-origin-placeholder' => "What's the origin of the artwork",
     'label-photos' => 'Photos',
     'label-photos-content' => 'Please upload one picture with the signature of the artwork and one picture of the artwork.
     You can upload up to 3 pictures with a maximum of 10MB each.',

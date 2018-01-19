@@ -232,20 +232,22 @@ footer {
     width: 212px;
     color: #777777; }
 
-.breadcrumbs ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  .breadcrumbs ul li:last-child a::after {
-    content: ""; }
-
-.breadcrumbs a {
-  color: #01a6a0;
-  text-decoration: none; }
-  .breadcrumbs a::after {
-    content: ">";
-    padding: 0 5px;
+.breadcrumbs {
+  margin: 20px auto;
+  max-width: 1024px; }
+  .breadcrumbs ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .breadcrumbs ul li:last-child a::after {
+      content: ""; }
+  .breadcrumbs a {
+    color: #01a6a0;
     text-decoration: none; }
+    .breadcrumbs a::after {
+      content: ">";
+      padding: 0 5px;
+      text-decoration: none; }
 
 .pagination ul {
   display: -webkit-box;
@@ -532,6 +534,189 @@ section .icons {
       .spotlight figcaption p:first-of-type {
         padding-bottom: 0; }
 
+form {
+  margin: 0 auto;
+  max-width: 1024px; }
+  form h2 {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-weight: lighter;
+    font-size: 30px;
+    color: #4e4e4e;
+    padding: 20px 0 40px; }
+  form h3 {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-weight: lighter;
+    font-size: 21px;
+    color: #4e4e4e;
+    padding-bottom: 10px; }
+  form .select {
+    position: relative;
+    width: 480px; }
+    form .select button {
+      font-weight: bold;
+      color: #515151;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 10px 15px;
+      margin: 5px 0 30px;
+      background: #E5E5E5;
+      border: 1px solid #E5E5E5;
+      font-size: 13px;
+      width: inherit;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      form .select button p {
+        padding: 0;
+        text-align: left; }
+    form .select .options {
+      display: none;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 45px;
+      z-index: 10; }
+      form .select .options a {
+        color: #494949;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: block;
+        background: rgba(250, 250, 250, 0.95);
+        border-bottom: 1px solid #E5E5E5;
+        border-left: 1px solid #E5E5E5;
+        border-right: 1px solid #E5E5E5; }
+        form .select .options a:hover {
+          background: #f6f6f6; }
+      form .select .options.show {
+        display: block; }
+  form label {
+    display: block;
+    font-size: 15px;
+    color: #0a1e75; }
+  form input {
+    display: block;
+    font-size: 13px;
+    padding: 10px 15px;
+    margin: 5px 0 30px;
+    background: #F5F5F5;
+    border: 1px solid #E5E5E5;
+    width: 450px; }
+    form input::-webkit-input-placeholder {
+      color: #515151; }
+    form input:-ms-input-placeholder {
+      color: #515151; }
+    form input::-ms-input-placeholder {
+      color: #515151; }
+    form input::placeholder {
+      color: #515151; }
+    form input[type=number], form input[type=date] {
+      width: 180px; }
+    form input[type=file] {
+      display: none; }
+    form input#origin {
+      width: 720px; }
+  form textarea {
+    display: block;
+    font-size: 13px;
+    padding: 10px 15px;
+    margin: 5px 0 30px;
+    background: #F5F5F5;
+    border: 1px solid #E5E5E5;
+    width: 720px;
+    max-width: 720px;
+    min-width: 720px;
+    min-height: 100px; }
+    form textarea::-webkit-input-placeholder {
+      color: #515151; }
+    form textarea:-ms-input-placeholder {
+      color: #515151; }
+    form textarea::-ms-input-placeholder {
+      color: #515151; }
+    form textarea::placeholder {
+      color: #515151; }
+  form p {
+    width: 600px;
+    color: #4d4d4d;
+    font-size: 15px;
+    padding: 5px 0 30px; }
+  form .grey-buttons {
+    background: #757575;
+    color: #ffffff;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
+    width: 180px;
+    height: 29px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px; }
+  form > div, form > section > div {
+    max-width: 752px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  form > section p {
+    width: 480px;
+    font-size: 12px; }
+  form .actions {
+    display: block;
+    width: 260px;
+    max-width: 260px; }
+    form .actions a {
+      color: #01a6a0;
+      padding-left: 5px; }
+    form .actions label {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    form .actions input, form .actions button {
+      width: 100%; }
+      form .actions input[type=checkbox], form .actions button[type=checkbox] {
+        width: initial;
+        margin-right: 13px; }
+    form .actions input[type=submit] {
+      padding: 15px 0;
+      background: #01a6a0;
+      border-color: #01a6a0;
+      color: #ffffff;
+      font-size: 16px;
+      margin-bottom: 0; }
+    form .actions button {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      color: #01a6a0;
+      background: #ffffff;
+      border: none;
+      font-size: 13px;
+      padding: 20px; }
+      form .actions button img {
+        display: block;
+        height: 12px;
+        margin-left: 10px; }
+
 .advanced {
   border-bottom: 1px solid #b0b0b0; }
   .advanced .wrap {
@@ -615,8 +800,11 @@ section .icons {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 15px 0; }
+          justify-content: space-between; }
+  .location .breadcrumbs {
+    margin-left: 0; }
+  .location .pagination {
+    margin-top: 20px; }
 
 .results {
   max-width: 1024px;

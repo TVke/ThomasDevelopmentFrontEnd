@@ -19,12 +19,12 @@
             <li><a href=".">{{ __('general.bread-new-auction') }}</a></li>
         </ul>
     </nav>
-    <h2>{{ __('auction-new.title') }}</h2>
     <form action="." method="post" enctype="multipart/form-data">
+        <h2>{{ __('auction-new.title') }}</h2>
         {{ csrf_field() }}
         <input type="hidden" name="style">
         <div class="select">
-            <button>{{ __('auction-new.style') }} <img src="{{ asset('/img/icons/arrow.svg') }}" alt="{{ __('general.arrow-alt') }}"></button>
+            <button><p>{{ __('auction-new.style') }}</p> <img src="{{ asset('/img/icons/select_arrow.svg') }}" alt="{{ __('general.arrow-alt') }}"></button>
             <div class="options">
                 <ul>
                     <li><a href=".">{{ __('general.s1_Abstract') }}</a></li>
@@ -50,7 +50,7 @@
             </div>
             <div>
                 <label for="year">{{ __('auction-new.label-year') }}</label>
-                <input type="date" id="year" placeholder="XXXX" required>
+                <input type="number" id="year" placeholder="XXXX" min="0" required>
             </div>
         </div>
         <div>
@@ -68,32 +68,41 @@
             </div>
         </div>
         <div>
-            <label for="description">{{ __('auction-new.label-description') }}</label>
-            <textarea id="description" placeholder="{{ __('auction-new.label-description-placeholder') }}" required></textarea>
-        </div>
-        <div>
-            <label for="condition">{{ __('auction-new.label-condition') }}</label>
-            <textarea id="condition" placeholder="{{ __('auction-new.label-condition-placeholder') }}" required></textarea>
-        </div>
-        <div>
-            <label for="origin">{{ __('auction-new.label-origin') }}</label>
-            <input id="origin" placeholder="{{ __('auction-new.label-origin-placeholder') }}" required>
-        </div>
-        <div>
-            <label for="origin">{{ __('auction-new.label-photos') }}</label>
-            <p>{{ __('auction-new.label-photos-content') }}</p>
+            <div>
+                <label for="description">{{ __('auction-new.label-description') }}</label>
+                <textarea id="description" placeholder="{{ __('auction-new.label-description-placeholder') }}" required></textarea>
+
+            </div>
         </div>
         <div>
             <div>
-                <label for="artwork">{{ __('auction-new.upload-artwork') }}</label>
+                <label for="condition">{{ __('auction-new.label-condition') }}</label>
+                <textarea id="condition" placeholder="{{ __('auction-new.label-condition-placeholder') }}" required></textarea>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="origin">{{ __('auction-new.label-origin') }}</label>
+                <input id="origin" placeholder="{{ __('auction-new.label-origin-placeholder') }}" required>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label>{{ __('auction-new.label-photos') }}</label>
+                <p>{{ __('auction-new.label-photos-content') }}</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="artwork" class="grey-buttons">{{ __('auction-new.upload-artwork') }}</label>
                 <input type="file" id="artwork" multiple required>
             </div>
             <div>
-                <label for="signature">{{ __('auction-new.upload-signature') }}</label>
+                <label for="signature" class="grey-buttons">{{ __('auction-new.upload-signature') }}</label>
                 <input type="file" id="signature" multiple required>
             </div>
             <div>
-                <label for="optional">{{ __('auction-new.upload-optional') }}</label>
+                <label for="optional" class="grey-buttons">{{ __('auction-new.upload-optional') }}</label>
                 <input type="file" id="optional" multiple>
             </div>
         </div>

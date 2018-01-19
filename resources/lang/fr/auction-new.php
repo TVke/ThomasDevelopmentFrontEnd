@@ -27,9 +27,9 @@ return [
     'label-description' => 'Description',
     'label-condition' => 'Condition',
     'label-origin' => 'Origine',
-    'label-description-placeholder' => 'Description',
-    'label-condition-placeholder' => 'Condition',
-    'label-origin-placeholder' => 'Origine',
+    'label-description-placeholder' => 'Décrivez votre enchère aussi complète que possible',
+    'label-condition-placeholder' => "Quelle est la condition de l'oeuvre",
+    'label-origin-placeholder' => "Quelle est l'origine de l'oeuvre",
     'label-photos' => 'Photos',
     'label-photos-content' => "Veuillez télécharger une photo avec la signature de l'oeuvre et une photo de l'oeuvre.
     Vous pouvez télécharger jusqu'à 3 photos avec un maximum de 10 Mo chacune.",

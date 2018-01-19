@@ -95,7 +95,13 @@
     max-width: 1024px;
     display: flex;
     justify-content: space-between;
-    padding: 15px 0;
+
+    .breadcrumbs{
+        margin-left: 0;
+    }
+    .pagination{
+        margin-top: 20px;
+    }
 }
 
 .results{
