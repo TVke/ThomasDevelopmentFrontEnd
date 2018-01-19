@@ -26,6 +26,9 @@
     @else
         <meta name="description" content="{{ __('general.description-general') }}">
     @endif
+    @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+            <link rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+    @endforeach
 </head>
 <body>
 <header>
@@ -50,8 +53,8 @@
                         </form>
                     </li>
                 @else
-                    <li><a href="{{ route('watchlist') }}"><img src="{{ asset('/img/icons/menu.svg') }}" alt="menu" role="presentation">{{ __('general.WATCHLIST') }}</a></li>
-                    <li><span>|</span><a href="{{ route('profile') }}"><img src="{{ asset('/img/icons/user.svg') }}" alt="profile" role="presentation">{{ __('general.PROFILE') }}</a></li>
+                    <li><a href="{{ route('watchlist') }}"><img src="{{ asset('/img/icons/menu.svg') }}" alt="{{ __('general.menu-alt') }}" role="presentation">{{ __('general.WATCHLIST') }}</a></li>
+                    <li><span>|</span><a href="{{ route('profile') }}"><img src="{{ asset('/img/icons/user.svg') }}" alt="{{ __('general.profile-alt') }}" role="presentation">{{ __('general.PROFILE') }}</a></li>
                     <li>
                         <form action="{{ route('logout') }}" method="post">
                             {{ csrf_field() }}
@@ -79,9 +82,9 @@
                 </ul>
             </nav>
             <ul>
-                <li><a href="{{ route('changeLang',['lang' => 'NL']) }}">NL</a></li>
-                <li><a href="{{ route('changeLang',['lang' => 'FR']) }}">FR</a></li>
-                <li><a href="{{ route('changeLang',['lang' => 'EN']) }}" class="active">EN</a></li>
+                <li><a href="{{ LaravelLocalization::getLocalizedURL('nl') }}"{{ (LaravelLocalization::getCurrentLocale()==="nl")?" class=active":"" }}>NL</a></li>
+                <li><a href="{{ LaravelLocalization::getLocalizedURL('fr') }}"{{ (LaravelLocalization::getCurrentLocale()==="fr")?" class=active":"" }}>FR</a></li>
+                <li><a href="{{ LaravelLocalization::getLocalizedURL('en') }}"{{ (LaravelLocalization::getCurrentLocale()==="en")?" class=active":"" }}>EN</a></li>
             </ul>
         </div>
     </div>
@@ -100,15 +103,15 @@
                     <li><h4>{{ __('general.HELP') }}</h4></li>
                     <li><a href=".">{{ __('general.h_Terms') }}</a></li>
                     <li><a href=".">{{ __('general.h_Privacy') }}</a></li>
-                    <li><a href=".">{{ __('general.h_FAQ') }}</a></li>
-                    <li><a href=".">{{ __('general.h_Contact') }}</a></li>
+                    <li><a href="{{ route('FAQ') }}">{{ __('general.h_FAQ') }}</a></li>
+                    <li><a href="{{ route('contact') }}">{{ __('general.h_Contact') }}</a></li>
                     <li><a href=".">{{ __('general.h_About') }}</a></li>
                 </ul>
                 <ul>
                     <li><h4>{{ __('general.LANGUAGES') }}</h4></li>
-                    <li><a href=".">{{ __('general.l_Nederlands') }}</a></li>
-                    <li><a href=".">{{ __('general.l_Français') }}</a></li>
-                    <li><a href=".">{{ __('general.l_English') }}</a></li>
+                    <li><a href="{{ LaravelLocalization::getLocalizedURL('nl') }}">{{ __('general.l_Nederlands') }}</a></li>
+                    <li><a href="{{ LaravelLocalization::getLocalizedURL('fr') }}">{{ __('general.l_Français') }}</a></li>
+                    <li><a href="{{ LaravelLocalization::getLocalizedURL('en') }}">{{ __('general.l_English') }}</a></li>
                 </ul>
             </section>
             <section>
@@ -204,9 +207,9 @@
                     </ul>
                 </nav>
                 <ul>
-                    <li><a href="{{ route('changeLang',['lang' => 'NL']) }}">NL</a></li>
-                    <li><a href="{{ route('changeLang',['lang' => 'FR']) }}">FR</a></li>
-                    <li><a href="{{ route('changeLang',['lang' => 'EN']) }}" class="active">EN</a></li>
+                    <li><a href="{{ LaravelLocalization::getLocalizedURL('nl') }}"{{ (LaravelLocalization::getCurrentLocale()==="nl")?" class=active":"" }}>NL</a></li>
+                    <li><a href="{{ LaravelLocalization::getLocalizedURL('fr') }}"{{ (LaravelLocalization::getCurrentLocale()==="fr")?" class=active":"" }}>FR</a></li>
+                    <li><a href="{{ LaravelLocalization::getLocalizedURL('en') }}"{{ (LaravelLocalization::getCurrentLocale()==="en")?" class=active":"" }}>EN</a></li>
                 </ul>
             </div>
         </div>

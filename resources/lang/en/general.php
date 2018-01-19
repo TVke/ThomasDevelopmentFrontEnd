@@ -40,6 +40,9 @@ return [
     'WATCHLIST' => 'WATCHLIST',
     'PROFILE' => 'PROFILE',
     'LOGOUT' => 'LOGOUT',
+    /* svg alt */
+    'menu-alt' => 'menu',
+    'profile-alt' => 'profile',
 
     /* footer */
     'copywrite' => '© :year Studio6, Inc. All rights reserved.',
@@ -108,4 +111,10 @@ return [
     'call-to-auction' => 'VISIT AUCTION',
     'arrow-alt' => 'arrow',
 
+    /* breadcrumbs */
+    'bread-home' => 'Home',
+    'bread-auctions' => 'Auctions',
+    'bread-salvador' => 'Salvador Dali',
+    'bread-dance' => 'Dance of Time III',
+    'bread-FAQ' => 'Frequently Asked Questions',
 ];

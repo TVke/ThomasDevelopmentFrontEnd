@@ -409,12 +409,18 @@ section .icons {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between; }
-        .switch > div.first div a img {
+        .switch > div.first div a {
           display: block;
           width: 314px; }
-      .switch > div.first > a img {
+          .switch > div.first div a img {
+            display: block;
+            width: 100%; }
+      .switch > div.first > a {
         display: block;
         width: 703px; }
+        .switch > div.first > a img {
+          display: block;
+          width: 100%; }
 
 .spotlight {
   position: relative; }
@@ -443,7 +449,7 @@ section .icons {
       font-size: 15px;
       line-height: 21px;
       width: 315px;
-      margin: 50px;
+      margin: auto 50px;
       -webkit-box-sizing: border-box;
               box-sizing: border-box; }
       .spotlight figcaption .content::before {
@@ -468,24 +474,24 @@ section .icons {
       padding: 29px;
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
+      display: flex; }
       .spotlight figcaption button img {
         display: block;
         height: 17px;
         width: 11px;
-        margin: 3px 10px; }
+        margin: 2px 20px; }
     .spotlight figcaption h4 {
       font-family: "Helvetica", "Arial", sans-serif;
       font-size: 30px;
       font-weight: lighter;
-      border-bottom: 1px solid rgba(43, 69, 181, 0.65);
-      padding: 30px; }
+      border-bottom: 1px solid #6d7ec7;
+      padding: 30px 30px 19px; }
     .spotlight figcaption p {
       font-size: 15px;
-      line-height: 21px; }
+      line-height: 21px;
+      padding: 20px 30px 20px; }
+      .spotlight figcaption p:first-of-type {
+        padding-bottom: 0; }
 
 .error p {
   text-align: center; }

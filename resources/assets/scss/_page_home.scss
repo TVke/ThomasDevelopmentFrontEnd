@@ -201,14 +201,22 @@ section{
                 flex-direction: column;
                 justify-content: space-between;
 
-                a img{
+                a{
                     display: block;
                     width: 314px;
+                    img{
+                        display: block;
+                        width: 100%;
+                    }
                 }
             }
-            &>a img{
+            &>a{
                 display: block;
                 width: 703px;
+                img{
+                    display: block;
+                    width: 100%;
+                }
             }
         }
     }
