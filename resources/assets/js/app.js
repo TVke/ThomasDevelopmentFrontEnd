@@ -86,11 +86,6 @@ function Carousel() {
             DOMElements.images[imageIndex].className = "shown";
         },
     };
-    // var Creator = {
-    //     makeNav: function () {
-    //
-    //     },
-    // };
 
     !function initial() {
         OrderController.makeImageActive(model.activeImageIndex);
@@ -100,5 +95,7 @@ function Carousel() {
 }
 
 !function () {
-    new Carousel();
+    if(document.getElementsByClassName("carousel").length>0){
+        new Carousel();
+    }
 }();
