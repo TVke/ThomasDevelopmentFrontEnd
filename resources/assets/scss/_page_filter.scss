@@ -1,1 +1,104 @@
 
+.advanced{
+    border-bottom: 1px solid $filter-separator;
+
+    .wrap{
+        width: 100%;
+        max-width: 1024px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 30px 0;
+
+        p{
+            font-size: 15px;
+            color: $sorter-color;
+
+            strong{
+                color: $black;
+            }
+            a{
+                text-decoration: none;
+                color: inherit;
+                margin: 0 7px;
+                padding: 7px 0;
+
+                &.selected{
+                    font-weight: bold;
+                    border-bottom:3px solid $selected-sort;
+                }
+            }
+        }
+
+        h2{
+            font-family: $Helvetica;
+            font-size: 20px;
+            padding: 0;
+
+            a{
+                text-decoration: none;
+                font-weight: lighter;
+                color: $brand-blue-darker;
+                display: flex;
+
+                img{
+                    margin-left: 18px;
+                    display: block;
+                    height: 26px;
+                    width: 26px;
+                    transition: all .3s ease;
+                    transform: rotate(90deg);
+                }
+
+                &:hover img{
+                    transform: rotate(0);
+                }
+            }
+
+        }
+    }
+
+    &>.filter{
+        margin: 0 auto;
+        max-width: 1024px;
+        display: flex;
+        flex-wrap: wrap;
+
+        section{
+            padding-right: 90px;
+
+            ul{
+                padding-bottom: 25px;
+            }
+            h4{
+                font-size: 13px;
+                line-height: 20px;
+            }
+            a{
+                font-size: 12px;
+                line-height: 20px;
+                text-decoration: none;
+                color: $filter-color;
+                margin-left: 11px;
+
+                &.selected{
+                    border-bottom:2px solid $selected-sort;
+                }
+            }
+        }
+    }
+}
+
+.location{
+    margin: 0 auto;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.results{
+    max-width: 1024px;
+    margin: 40px auto 0;
+}

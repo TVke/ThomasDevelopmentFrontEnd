@@ -11,62 +11,71 @@
             </div>
         </figcaption>
     </figure>
-    <section>
-        <p><strong>{{ __('filter.sort') }}</strong> <a href=".">{{ __('filter.sort-soon') }}</a>|<a href=".">{{ __('filter.sort-latest') }}</a>|<a href=".">{{ __('filter.sort-new') }}</a>|<a href=".">{{ __('filter.sort-popular') }}</a></p>
-        <h2>{{ __('filter.advanced') }} <img src="{{ __('/img/icons/arrow.svg') }}" alt="{{ __('general.arrow-alt') }}"></h2>
-
-        <section>
-            <ul>
-                <li><h4>{{ __('general.PRICE') }}</h4></li>
-                <li><a href=".">{{ __('general.p_UpTo') }} 5,000</a></li>
-                <li><a href=".">5,000–10,000</a></li>
-                <li><a href=".">10,000–25,000</a></li>
-                <li><a href=".">25,000–50,000</a></li>
-                <li><a href=".">50,000–100,000</a></li>
-                <li><a href=".">{{ __('general.p_Above') }}</a></li>
-            </ul>
-            <ul>
-                <li><h4>{{ __('general.ENDINGS') }}</h4></li>
-                <li><a href=".">{{ __('general.en_Ending') }}</a></li>
-                <li><a href=".">{{ __('general.en_Newly') }}</a></li>
-                <li><a href=".">{{ __('general.en_Purchase') }}</a></li>
-            </ul>
-        </section>
-        <section>
-            <ul>
-                <li><h4>{{ __('general.ERA') }}</h4></li>
-                <li><a href=".">{{ __('general.er_Pre') }}</a></li>
-                <li><a href=".">1940s–1950s</a></li>
-                <li><a href=".">1960s–1980s</a></li>
-                <li><a href=".">1990s–{{ __('general.er_Present') }}</a></li>
-            </ul>
-            <ul>
-                <li><h4>{{ __('general.MEDIA') }}</h4></li>
-                <li><a href=".">{{ __('general.s2_Design') }}</a></li>
-                <li><a href=".">{{ __('general.s2_Paintings') }}</a></li>
-                <li><a href=".">{{ __('general.s2_Photographs') }}</a></li>
-                <li><a href=".">{{ __('general.s2_Prints') }}</a></li>
-                <li><a href=".">{{ __('general.s2_Sculpture') }}</a></li>
-            </ul>
-        </section>
-        <section>
-            <ul>
-                <li><h4>{{ __('general.STYLE') }}</h4></li>
-                <li><a href=".">{{ __('general.s1_Abstract') }}</a></li>
-                <li><a href=".">{{ __('general.s1_African') }}</a></li>
-                <li><a href=".">{{ __('general.s1_Asian') }}</a></li>
-                <li><a href="." class="selected">{{ __('general.s1_Conceptual') }}</a></li>
-                <li><a href=".">{{ __('general.s1_Contemporary') }}</a></li>
-                <li><a href=".">{{ __('general.s1_Emerging') }}</a></li>
-                <li><a href=".">{{ __('general.s1_Figurative') }}</a></li>
-                <li><a href=".">{{ __('general.s1_Middle') }}</a></li>
-                <li><a href=".">{{ __('general.s1_Minimalism') }}</a></li>
-                <li><a href=".">{{ __('general.s1_Modern') }}</a></li>
-                <li><a href=".">{{ __('general.s1_Pop') }}</a></li>
-                <li><a href=".">{{ __('general.s1_Urban') }}</a></li>
-                <li><a href=".">{{ __('general.s1_Vintage') }}</a></li>
-            </ul>
-        </section>
+    <section class="advanced">
+        <div class="wrap">
+            <p>
+                <strong>{{ __('filter.sort') }}</strong>
+                <a href=".">{{ __('filter.sort-soon') }}</a>|
+                <a href=".">{{ __('filter.sort-latest') }}</a>|
+                <a href="." class="selected">{{ __('filter.sort-new') }}</a>|
+                <a href=".">{{ __('filter.sort-popular') }}</a>
+            </p>
+            <h2><a href=".">{{ __('filter.advanced') }} <img src="{{ __('/img/icons/advanced arrow.png') }}" alt="{{ __('general.arrow-alt') }}"></a></h2>
+        </div>
+        <div class="filter">
+            <section>
+                <ul>
+                    <li><h4>{{ __('general.PRICE') }}</h4></li>
+                    <li><a href=".">{{ __('general.p_UpTo') }} 5,000</a></li>
+                    <li><a href="." class="selected">5,000–10,000</a></li>
+                    <li><a href=".">10,000–25,000</a></li>
+                    <li><a href=".">25,000–50,000</a></li>
+                    <li><a href=".">50,000–100,000</a></li>
+                    <li><a href=".">{{ __('general.p_Above') }}</a></li>
+                </ul>
+                <ul>
+                    <li><h4>{{ __('general.ENDINGS') }}</h4></li>
+                    <li><a href=".">{{ __('general.en_Ending') }}</a></li>
+                    <li><a href=".">{{ __('general.en_Newly') }}</a></li>
+                    <li><a href=".">{{ __('general.en_Purchase') }}</a></li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li><h4>{{ __('general.ERA') }}</h4></li>
+                    <li><a href=".">{{ __('general.er_Pre') }}</a></li>
+                    <li><a href=".">1940s–1950s</a></li>
+                    <li><a href=".">1960s–1980s</a></li>
+                    <li><a href=".">1990s–{{ __('general.er_Present') }}</a></li>
+                </ul>
+                <ul>
+                    <li><h4>{{ __('general.MEDIA') }}</h4></li>
+                    <li><a href=".">{{ __('general.s2_Design') }}</a></li>
+                    <li><a href=".">{{ __('general.s2_Paintings') }}</a></li>
+                    <li><a href=".">{{ __('general.s2_Photographs') }}</a></li>
+                    <li><a href=".">{{ __('general.s2_Prints') }}</a></li>
+                    <li><a href=".">{{ __('general.s2_Sculpture') }}</a></li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li><h4>{{ __('general.STYLE') }}</h4></li>
+                    <li><a href=".">{{ __('general.s1_Abstract') }}</a></li>
+                    <li><a href=".">{{ __('general.s1_African') }}</a></li>
+                    <li><a href=".">{{ __('general.s1_Asian') }}</a></li>
+                    <li><a href="." class="selected">{{ __('general.s1_Conceptual') }}</a></li>
+                    <li><a href=".">{{ __('general.s1_Contemporary') }}</a></li>
+                    <li><a href=".">{{ __('general.s1_Emerging') }}</a></li>
+                    <li><a href=".">{{ __('general.s1_Figurative') }}</a></li>
+                    <li><a href=".">{{ __('general.s1_Middle') }}</a></li>
+                    <li><a href=".">{{ __('general.s1_Minimalism') }}</a></li>
+                    <li><a href=".">{{ __('general.s1_Modern') }}</a></li>
+                    <li><a href=".">{{ __('general.s1_Pop') }}</a></li>
+                    <li><a href=".">{{ __('general.s1_Urban') }}</a></li>
+                    <li><a href=".">{{ __('general.s1_Vintage') }}</a></li>
+                </ul>
+            </section>
+        </div>
     </section>
     <div class="location">
         <nav class="breadcrumbs">

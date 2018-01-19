@@ -18,6 +18,7 @@ ul{
     width: 100%;
     max-width: 64rem;
     margin: 0 auto;
+    z-index: 20;
 
     h1 {
         text-indent: -9999rem;
@@ -31,7 +32,6 @@ ul{
         padding: 0 14px 10px;
         box-shadow: $logo-shadow;
         background: white;
-        z-index: 10;
     }
 }
 header{
@@ -280,5 +280,43 @@ footer{
         margin-left: 1px;
         width: 212px;
         color: $grey-dark;
+    }
+}
+
+.breadcrumbs{
+    ul{
+        display: flex;
+
+        li:last-child a::after{
+            content: "";
+        }
+    }
+    a{
+        color: $brand;
+        text-decoration: none;
+
+        &::after{
+            content: ">";
+            padding: 0 5px;
+            text-decoration: none;
+        }
+    }
+}
+
+.pagination{
+    ul{
+        display: flex;
+
+        a{
+            padding: 5px;
+            color: $footer-grey;
+            font-size: 15px;
+            text-decoration: none;
+
+            &.active{
+                color: $black;
+                font-weight: bold;
+            }
+        }
     }
 }

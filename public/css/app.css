@@ -13,7 +13,8 @@ ul {
   position: relative;
   width: 100%;
   max-width: 64rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  z-index: 20; }
   .logo h1 {
     text-indent: -9999rem;
     position: absolute;
@@ -25,8 +26,7 @@ ul {
     padding: 0 14px 10px;
     -webkit-box-shadow: 0 0 24px rgba(1, 1, 1, 0.19);
             box-shadow: 0 0 24px rgba(1, 1, 1, 0.19);
-    background: white;
-    z-index: 10; }
+    background: white; }
 
 header .logo {
   top: 0; }
@@ -232,6 +232,34 @@ footer {
     width: 212px;
     color: #777777; }
 
+.breadcrumbs ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .breadcrumbs ul li:last-child a::after {
+    content: ""; }
+
+.breadcrumbs a {
+  color: #01a6a0;
+  text-decoration: none; }
+  .breadcrumbs a::after {
+    content: ">";
+    padding: 0 5px;
+    text-decoration: none; }
+
+.pagination ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .pagination ul a {
+    padding: 5px;
+    color: #5c5c5c;
+    font-size: 15px;
+    text-decoration: none; }
+    .pagination ul a.active {
+      color: #000;
+      font-weight: bold; }
+
 .carousel {
   background: #cacaca;
   position: relative;
@@ -305,12 +333,17 @@ footer {
       border-radius: 50%;
       height: 18px;
       width: 17px; }
+  .carousel > img {
+    opacity: 0;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease; }
   .carousel img {
     height: 857px;
     z-index: 0;
     margin: 0 auto; }
     .carousel img.shown {
-      z-index: 1; }
+      z-index: 1;
+      opacity: 1; }
   .carousel noscript {
     z-index: 10;
     bottom: 0;
@@ -455,7 +488,7 @@ section .icons {
       font-size: 15px;
       line-height: 21px;
       width: 315px;
-      margin: auto 50px;
+      margin: auto 0;
       -webkit-box-sizing: border-box;
               box-sizing: border-box; }
       .spotlight figcaption .content::before {
@@ -498,6 +531,96 @@ section .icons {
       padding: 20px 30px 20px; }
       .spotlight figcaption p:first-of-type {
         padding-bottom: 0; }
+
+.advanced {
+  border-bottom: 1px solid #b0b0b0; }
+  .advanced .wrap {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 30px 0; }
+    .advanced .wrap p {
+      font-size: 15px;
+      color: #4d4d4d; }
+      .advanced .wrap p strong {
+        color: #000; }
+      .advanced .wrap p a {
+        text-decoration: none;
+        color: inherit;
+        margin: 0 7px;
+        padding: 7px 0; }
+        .advanced .wrap p a.selected {
+          font-weight: bold;
+          border-bottom: 3px solid #d4d4d4; }
+    .advanced .wrap h2 {
+      font-family: "Helvetica", "Arial", sans-serif;
+      font-size: 20px;
+      padding: 0; }
+      .advanced .wrap h2 a {
+        text-decoration: none;
+        font-weight: lighter;
+        color: #0a1e75;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .advanced .wrap h2 a img {
+          margin-left: 18px;
+          display: block;
+          height: 26px;
+          width: 26px;
+          -webkit-transition: all .3s ease;
+          transition: all .3s ease;
+          -webkit-transform: rotate(90deg);
+                  transform: rotate(90deg); }
+        .advanced .wrap h2 a:hover img {
+          -webkit-transform: rotate(0);
+                  transform: rotate(0); }
+  .advanced > .filter {
+    margin: 0 auto;
+    max-width: 1024px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .advanced > .filter section {
+      padding-right: 90px; }
+      .advanced > .filter section ul {
+        padding-bottom: 25px; }
+      .advanced > .filter section h4 {
+        font-size: 13px;
+        line-height: 20px; }
+      .advanced > .filter section a {
+        font-size: 12px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #595959;
+        margin-left: 11px; }
+        .advanced > .filter section a.selected {
+          border-bottom: 2px solid #d4d4d4; }
+
+.location {
+  margin: 0 auto;
+  max-width: 1024px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 0; }
+
+.results {
+  max-width: 1024px;
+  margin: 40px auto 0; }
 
 .error p {
   text-align: center; }
