@@ -164,7 +164,12 @@ section{
                 width: 28px;
             }
             &.open{
+                transition: all .3s ease;
                 transform: rotate(90deg);
+
+                &:hover{
+                    transform: rotate(0);
+                }
             }
         }
     }

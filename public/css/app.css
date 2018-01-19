@@ -158,7 +158,8 @@ footer {
     .sitemap section ul {
       margin-bottom: 19px; }
       .sitemap section ul h4 {
-        line-height: 19px; }
+        line-height: 19px;
+        text-transform: uppercase; }
       .sitemap section ul a {
         display: block;
         color: #01a6a0;
@@ -369,8 +370,13 @@ section .icons {
         height: 28px;
         width: 28px; }
       .switch h2 a.open {
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
         -webkit-transform: rotate(90deg);
                 transform: rotate(90deg); }
+        .switch h2 a.open:hover {
+          -webkit-transform: rotate(0);
+                  transform: rotate(0); }
   .switch > div {
     max-width: 1024px;
     margin: 0 auto;

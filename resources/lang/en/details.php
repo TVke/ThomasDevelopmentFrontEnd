@@ -46,8 +46,8 @@ return [
     /* related */
     'related-title' => 'Related items',
 
-    'related-2' => '',
-    'related-3' => '',
-    'related-4' => '',
+    'related-2' => 'four views of the same person with a blue filter',
+    'related-3' => 'a woman walking in front of an orange canvas',
+    'related-4' => "a sepia picture of the curves of a woman's bottom",
 
 ];

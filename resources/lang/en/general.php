@@ -47,12 +47,13 @@ return [
     /* footer */
     'copywrite' => '© :year Studio6, Inc. All rights reserved.',
     /* sitemap  titels */
-    'HELP' => 'HELP',
-    'LANGUAGES' => 'LANGUAGES',
-    'STYLE' => 'STYLE',
-    'PRICE' => 'PRICE',
-    'ERA' => 'ERA',
-    'ENDINGS' => 'ENDINGS',
+    'HELP' => 'Help',
+    'LANGUAGES' => 'Languages',
+    'STYLE' => 'Style',
+    'PRICE' => 'Price',
+    'ERA' => 'Era',
+    'ENDINGS' => 'Endings',
+    'MEDIA' => 'Media',
     /* sitemap parts */
     'h_Terms' => 'Terms of Service',
     'h_Privacy' => 'Privacy Policy',
@@ -117,4 +118,7 @@ return [
     'bread-salvador' => 'Salvador Dali',
     'bread-dance' => 'Dance of Time III',
     'bread-FAQ' => 'Frequently Asked Questions',
+    'bread-user' => 'Jasper Poppe',
+    'bread-myauctions' => 'My auctions',
+    'bread-new-auction' => 'New auction',
 ];

@@ -15,8 +15,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function() {
     Route::view('/', 'home')->name('home');
     Route::view('/search', 'search')->name('search');
     Route::view('/art', 'details')->name('art');
-    Route::view('/isearch', 'isearch')->name('isearch');
-    Route::view('/myauctions', 'myauctions')->name('myauctions');
+    Route::view('/isearch', 'filter')->name('isearch');
+    Route::view('/myauctions', 'auction.new')->name('myauctions');
     Route::view('/mybids', 'mybids')->name('mybids');
     Route::view('/contact', 'contact')->name('contact');
 
