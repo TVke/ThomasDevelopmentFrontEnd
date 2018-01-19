@@ -19,7 +19,7 @@
             <li><a href=".">{{ __('general.bread-new-auction') }}</a></li>
         </ul>
     </nav>
-    <form action="." method="post" enctype="multipart/form-data">
+    <form action="." method="post" enctype="multipart/form-data" class="new">
         <h2>{{ __('auction-new.title') }}</h2>
         {{ csrf_field() }}
         <input type="hidden" name="style">

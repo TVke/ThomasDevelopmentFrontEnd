@@ -132,6 +132,45 @@ function Select() {
         ListenerController.init();
     }();
 }
+
+function TimeController() {
+    var DOMElements = {
+        select: document.querySelectorAll(".action time"),
+    };
+    var model = {
+        timers:[],
+    };
+    var TimeController = {
+        init: function () {
+            this.countDownStart();
+        },
+        countDownStart: function () {
+            for(var i = 0,ilen = DOMElements.select.length;i<ilen;++i){
+                !function (i) {
+                    var newTimer = setInterval(function () {
+                        var currentTime = TimeController.stringToTime(DOMElements.select[i].innerHTML);
+                        TimeController.minusOneOnTime(currentTime);
+                        DOMElements.select[i].innerHTML = TimeController.timeToString(currentTime);
+                    },1000);
+                    model.timers.push(newTimer);
+                }(i);
+            }
+        },
+        stringToTime: function (string) {
+
+        },
+        minusOneOnTime: function (time) {
+
+        },
+        timeToString: function (time) {
+
+        },
+    };
+    !function initial() {
+        TimeController.init();
+    }();
+}
+
 !function () {
     if(document.getElementsByClassName("carousel").length>0){
         new Carousel();
@@ -139,4 +178,7 @@ function Select() {
     if(document.getElementsByClassName("select").length>0){
         new Select();
     }
+    // if(document.querySelectorAll(".action time").length>0){
+    //     new TimeController();
+    // }
 }();

@@ -534,25 +534,25 @@ section .icons {
       .spotlight figcaption p:first-of-type {
         padding-bottom: 0; }
 
-form {
+form.new {
   margin: 0 auto;
   max-width: 1024px; }
-  form h2 {
+  form.new h2 {
     font-family: "Helvetica", "Arial", sans-serif;
     font-weight: lighter;
     font-size: 30px;
     color: #4e4e4e;
     padding: 20px 0 40px; }
-  form h3 {
+  form.new h3 {
     font-family: "Helvetica", "Arial", sans-serif;
     font-weight: lighter;
     font-size: 21px;
     color: #4e4e4e;
     padding-bottom: 10px; }
-  form .select {
+  form.new .select {
     position: relative;
     width: 480px; }
-    form .select button {
+    form.new .select button {
       font-weight: bold;
       color: #515151;
       display: -webkit-box;
@@ -570,17 +570,17 @@ form {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-      form .select button p {
+      form.new .select button p {
         padding: 0;
         text-align: left; }
-    form .select .options {
+    form.new .select .options {
       display: none;
       position: absolute;
       left: 0;
       right: 0;
       top: 45px;
       z-index: 10; }
-      form .select .options a {
+      form.new .select .options a {
         color: #494949;
         text-decoration: none;
         padding: 10px 15px;
@@ -589,15 +589,15 @@ form {
         border-bottom: 1px solid #E5E5E5;
         border-left: 1px solid #E5E5E5;
         border-right: 1px solid #E5E5E5; }
-        form .select .options a:hover {
+        form.new .select .options a:hover {
           background: #f6f6f6; }
-      form .select .options.show {
+      form.new .select .options.show {
         display: block; }
-  form label {
+  form.new label {
     display: block;
     font-size: 15px;
     color: #0a1e75; }
-  form input {
+  form.new input {
     display: block;
     font-size: 13px;
     padding: 10px 15px;
@@ -605,21 +605,21 @@ form {
     background: #F5F5F5;
     border: 1px solid #E5E5E5;
     width: 450px; }
-    form input::-webkit-input-placeholder {
+    form.new input::-webkit-input-placeholder {
       color: #515151; }
-    form input:-ms-input-placeholder {
+    form.new input:-ms-input-placeholder {
       color: #515151; }
-    form input::-ms-input-placeholder {
+    form.new input::-ms-input-placeholder {
       color: #515151; }
-    form input::placeholder {
+    form.new input::placeholder {
       color: #515151; }
-    form input[type=number], form input[type=date] {
+    form.new input[type=number], form.new input[type=date] {
       width: 180px; }
-    form input[type=file] {
+    form.new input[type=file] {
       display: none; }
-    form input#origin {
+    form.new input#origin {
       width: 720px; }
-  form textarea {
+  form.new textarea {
     display: block;
     font-size: 13px;
     padding: 10px 15px;
@@ -630,20 +630,20 @@ form {
     max-width: 720px;
     min-width: 720px;
     min-height: 100px; }
-    form textarea::-webkit-input-placeholder {
+    form.new textarea::-webkit-input-placeholder {
       color: #515151; }
-    form textarea:-ms-input-placeholder {
+    form.new textarea:-ms-input-placeholder {
       color: #515151; }
-    form textarea::-ms-input-placeholder {
+    form.new textarea::-ms-input-placeholder {
       color: #515151; }
-    form textarea::placeholder {
+    form.new textarea::placeholder {
       color: #515151; }
-  form p {
+  form.new p {
     width: 600px;
     color: #4d4d4d;
     font-size: 15px;
     padding: 5px 0 30px; }
-  form .grey-buttons {
+  form.new .grey-buttons {
     background: #757575;
     color: #ffffff;
     font-size: 13px;
@@ -663,7 +663,7 @@ form {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 30px; }
-  form > div, form > section > div {
+  form.new > div, form.new > section > div {
     max-width: 752px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -671,33 +671,33 @@ form {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-  form > section p {
+  form.new > section p {
     width: 480px;
     font-size: 12px; }
-  form .actions {
+  form.new .actions {
     display: block;
     width: 260px;
     max-width: 260px; }
-    form .actions a {
+    form.new .actions a {
       color: #01a6a0;
       padding-left: 5px; }
-    form .actions label {
+    form.new .actions label {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
-    form .actions input, form .actions button {
+    form.new .actions input, form.new .actions button {
       width: 100%; }
-      form .actions input[type=checkbox], form .actions button[type=checkbox] {
+      form.new .actions input[type=checkbox], form.new .actions button[type=checkbox] {
         width: initial;
         margin-right: 13px; }
-    form .actions input[type=submit] {
+    form.new .actions input[type=submit] {
       padding: 15px 0;
       background: #01a6a0;
       border-color: #01a6a0;
       color: #ffffff;
       font-size: 16px;
       margin-bottom: 0; }
-    form .actions button {
+    form.new .actions button {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -712,7 +712,7 @@ form {
       border: none;
       font-size: 13px;
       padding: 20px; }
-      form .actions button img {
+      form.new .actions button img {
         display: block;
         height: 12px;
         margin-left: 10px; }
